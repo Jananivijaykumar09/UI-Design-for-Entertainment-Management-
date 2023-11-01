@@ -1,0 +1,123 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    /* Imaginary background color */
+    margin: 0;
+    padding: 0;
+    background-image: url('musicbg.jpg');
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    /* Optional: This keeps the background fixed while scrolling */
+    background-repeat: no-repeat;
+    /* Optional: Prevents background image from repeating */
+    background-color: #8a2be2;
+    /* Violet background color */
+}
+
+
+/* Header Styles */
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+/* Event Card Styles */
+
+.event-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.event-card {
+    flex: 0 0 300px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.event-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.event-card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.event-card p {
+    color: #777;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0077b6;
+    /* Change background color on hover */
+    color: #fff;
+    /* Text color on hover */
+}
+
+
+/* Event Info Styles */
+
+.event-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.venue {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #023e8a;
+}

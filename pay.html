@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <link rel="stylesheet" type="text/css" href="paystyle.css">
+</head>
+<body>
+    <div class="payment-success">
+        <div id="tick-mark"></div>
+        <h1>Payment Successful</h1>
+        <p>Thank you for your payment. Your transaction was successful.</p>
+        <p>Transaction ID: <strong>123456789</strong></p>
+        <p>Date: <strong>October 30, 2023</strong></p>
+        <p>Amount Paid: <strong>50.00</strong></p>
+        <div class="button-container">
+            
+            <button class="green-button">Done</button>
+        </div>
+        <br>
+    <br>
+    <div class="tran">
+    <fieldset>
+        <p>Transaction ID: <strong>123456789</strong></p>
+        <p>Date: <strong>October 30, 2023</strong></p>
+    </fieldset>
+</div>
+    </div>  
+    <script>
+    document.querySelector('button').addEventListener('click', function() {
+        document.body.classList.add('colorful');
+    });
+    </script>
+</body>
+</html>
+

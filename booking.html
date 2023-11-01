@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking1.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="booking2.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background: url('booking.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+
+
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+            <label for="adult">Adults</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="child">Children</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+            <label for="event-date">event-in Date</label>
+            <input type="date" id="event-date" name="event" required>
+        </div>
+        <div class="elem-group">
+            <label for="event-selection"></label>
+            <select id="event-selection" name="event_preference" required>
+              <option value="">Choose a event from the List</option>
+              <option value="Music">Music</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Happy streets">Happy streets</option>
+              <option value="Workshops">Workshops</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+        </div>
+        
+       
+        <a href="tran.html" class="book-button">Book Now</a>
+       
+    </form>
+</body>
+
+</html>

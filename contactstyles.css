@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e7e4e5;
+    background-image: url('CONTACCTBACK.jpg');
+    background-size: cover;
+    font: 700 12px/1.4 'Montserrat', sans-serif;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    max-width: 1000px;
+    margin-top: 200px;
+}
+
+.logo {
+    max-width: 450px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.screen {
+    position: relative;
+    background: linear-gradient(to right, rgb(250, 249, 250), rgb(240, 191, 203));
+    border-radius: 15px;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(236, 184, 198), rgb(245, 148, 183));
+    border-radius: 15px 15px 0 0;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: #09a5c0;
+}
+
+.screen-body {
+    margin-top: 100px;
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    width: min-content;
+    padding: 50px;
+}
+
+.app-title,
+.app-contact {
+    position: relative;
+    font-size: 26px;
+    color: #08c;
+}
+
+.app-contact {
+    font-size: 15px;
+    margin-top: 80px;
+    color: #08c;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color: #666;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #d6c6c6;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color:  #666;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: #666;
+}

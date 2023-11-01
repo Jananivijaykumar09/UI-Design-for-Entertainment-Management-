@@ -1,0 +1,74 @@
+body {
+    background-image: url('background\ image.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+.payment-success, .tran {
+    background-color: rgba(250, 249, 249, 0.885);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.payment-success h1 {
+    color: #4CAF50;
+}
+
+.payment-success p, .tran p {
+    margin: 10px 0;
+}
+
+.payment-success strong {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.tran {
+    background-color: rgb(255, 255, 255);
+}
+
+#tick-mark::before, #tick-mark::after {
+    background-color: #336699;
+}
+
+.button-container {
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.green-button:hover {
+    background-color: #45A049;
+}
+
+/* Colorful transition effect */
+.colorful {
+    background-color: rgba(255, 87, 34, 0.8);
+}
+
+.colorful .payment-success, .colorful .tran {
+    background-color: rgba(33, 150, 243, 0.8);
+}
